@@ -1,0 +1,20 @@
+{
+  "name": "ENOUGH.",
+  "short_name": "ENOUGH.",
+  "description": "A free wellness app for mind, body, community, purpose, faith, and worship.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#100e0c",
+  "theme_color": "#100e0c",
+  "orientation": "portrait",
+  "categories": ["health", "lifestyle"],
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
