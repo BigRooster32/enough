@@ -56,7 +56,7 @@ const pillars = [
     title: "Faith",
     kicker: "Pillar Five",
     line: "Wonder, surrender, peace, and whatever holds you steady.",
-    image: "https://images.unsplash.com/photo-1476611338391-6f395a0dd82e?w=1400&q=85",
+    image: "https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1400&q=85",
   },
 ];
 
