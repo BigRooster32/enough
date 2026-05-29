@@ -10,7 +10,7 @@ const AUTH_CONFIG = {
 
 const seedPost = {
   id: "seed-1",
-  author: "ENOUGH.",
+  author: "Enough",
   content: "Today I am grateful for breath, belonging, and the chance to begin again.",
   createdAt: new Date().toISOString(),
   hearts: 8,
@@ -332,12 +332,12 @@ function authTemplate() {
   return `
     <main class="auth-page">
       <section class="auth-copy">
-        <p class="eyebrow">ENOUGH.</p>
+        <p class="eyebrow">Enough</p>
         <h1>Infrastructure for human flourishing.</h1>
         <p>A private wellness space for mind, body, community, purpose, and faith. Create a profile so every reflection, check-in, and practice belongs to you.</p>
       </section>
       <form class="auth-card glass" id="auth-form">
-        <div class="brand-mark">ENOUGH.</div>
+        <div class="brand-mark">Enough</div>
         <div class="segmented" aria-label="Account mode">
           <button type="button" class="active" data-auth-mode="signup">Sign up</button>
           <button type="button" data-auth-mode="login">Log in</button>
@@ -383,9 +383,9 @@ function homeTemplate(user) {
       ${topBar(user)}
       <section class="home-hero">
         <div>
-          <p class="eyebrow">${user ? "Welcome home" : "You are enough."}</p>
-          <h1>${user ? `Hi, ${html(user.name)}. You are enough.` : "You are enough. Your pursuit of happiness, made practical."}</h1>
-          <p>${user ? html(user.intention) : "A free wellness app for mind, body, community, purpose, and faith. Create a profile right here on the homepage so every reflection and practice can save for you."}</p>
+          <p class="eyebrow">${user ? "Welcome home" : "Enough"}</p>
+          <h1>${user ? `Hi, ${html(user.name)}.` : "Enough"}</h1>
+          <p>${user ? `You are enough. ${html(user.intention)}` : "You are enough. A free wellness app for mind, body, community, purpose, and faith. Create a profile right here on the homepage so every reflection and practice can save for you."}</p>
         </div>
         ${user ? `<button class="profile-button" data-view="profile">Profile</button>` : `<a class="profile-button" href="#create-profile">Create profile</a>`}
       </section>
@@ -432,7 +432,7 @@ function eliteDashboard(user) {
       <div>
         <p class="eyebrow">Personal intelligence</p>
         <h2>Your pursuit map</h2>
-        <p>ENOUGH. is tracking your rituals, reflections, mood check-ins, worship saves, and body notes so your growth is visible.</p>
+        <p>Enough is tracking your rituals, reflections, mood check-ins, worship saves, and body notes so your growth is visible.</p>
         <div class="week-row">
           ${week.map((day) => `<span class="${day.active ? "active" : ""}">${day.label}</span>`).join("")}
         </div>
@@ -511,7 +511,7 @@ function profileActivePanel(user) {
 function topBar(user) {
   return `
     <header class="topbar">
-      <button class="wordmark" data-home><span>You Are</span> ENOUGH.</button>
+      <button class="wordmark" data-home>Enough</button>
       <div class="top-actions">
         ${user ? `<span>${html(user.name)}</span>
           <button class="icon-button" data-new-profile aria-label="Create a new profile" title="Create a new profile">New profile</button>
