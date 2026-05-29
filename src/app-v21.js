@@ -383,9 +383,9 @@ function homeTemplate(user) {
       ${topBar(user)}
       <section class="home-hero">
         <div>
-          <p class="eyebrow">${user ? "Welcome home" : "Enough"}</p>
-          <h1>${user ? `Hi, ${html(user.name)}.` : "Enough"}</h1>
-          <p>${user ? `You are enough. ${html(user.intention)}` : "You are enough. A free wellness app for mind, body, community, purpose, and faith. Create a profile right here on the homepage so every reflection and practice can save for you."}</p>
+          <p class="eyebrow">${user ? "Welcome home" : "Wellness for real life"}</p>
+          <h1>${user ? `Hi, ${html(user.name)}.` : "Your pursuit of happiness, made practical."}</h1>
+          <p>${user ? `You are enough. ${html(user.intention)}` : "You are enough. Build peace, joy, faith, purpose, and healthy habits in one free space that saves your progress."}</p>
         </div>
         ${user ? `<button class="profile-button" data-view="profile">Profile</button>` : `<a class="profile-button" href="#create-profile">Create profile</a>`}
       </section>

@@ -44,15 +44,15 @@ body::before {
   background-image: var(--app-bg-image);
   background-size: cover;
   background-position: center;
-  filter: saturate(0.92) brightness(0.62);
+  filter: saturate(1.08) brightness(0.86) contrast(1.04);
   transform: scale(1.02);
 }
 
 body::after {
   z-index: 0;
   background:
-    radial-gradient(circle at 20% 0%, rgba(217, 184, 111, 0.18), transparent 34rem),
-    linear-gradient(180deg, rgba(16, 14, 12, 0.62) 0%, rgba(16, 14, 12, 0.88) 42%, rgba(16, 14, 12, 0.96) 100%);
+    radial-gradient(circle at 20% 0%, rgba(217, 184, 111, 0.12), transparent 34rem),
+    linear-gradient(180deg, rgba(16, 14, 12, 0.42) 0%, rgba(16, 14, 12, 0.7) 44%, rgba(16, 14, 12, 0.84) 100%);
 }
 
 #root {
@@ -127,7 +127,7 @@ select:focus {
 .glass {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: linear-gradient(180deg, rgba(22, 17, 13, 0.76), rgba(18, 14, 11, 0.58));
+  background: linear-gradient(180deg, rgba(22, 17, 13, 0.68), rgba(18, 14, 11, 0.5));
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(20px);
 }
